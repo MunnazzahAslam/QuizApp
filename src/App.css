@@ -39,3 +39,13 @@ h3.correct{
   font-size: 18px;
   color: blue;
 }
+
+.pass{
+  font-size: 18px;
+  color: green;
+}
+
+.fail{
+  font-size: 18px;
+  color: red;
+}
