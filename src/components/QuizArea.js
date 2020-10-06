@@ -5,7 +5,12 @@ import UserOp from './UserOp.js';
 
 function QuizArea(props) {
     if(props.isFinished){
-        return <UserOp/>
+        if(props.correct >=2){
+        return <correct />
+        }
+        else{
+        return <incorrect />
+        }
     }
     else
     {
