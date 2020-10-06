@@ -17,13 +17,13 @@ export class Questionnaire extends Component {
     }
 
     handleClick(choice){
-            if(choice==this.state.dataSet[this.state.current].correct){
+            if(choice===this.state.dataSet[this.state.current].correct){
                 this.setState({correct:this.state.correct + 1})
     }
             else{
                 this.setState({incorrect:this.state.incorrect + 1})
             }
-            if(this.state.current == this.state.dataSet.length - 1){
+            if(this.state.current === this.state.dataSet.length - 1){
                 this.setState({isFinished:true})
             }
             else{
